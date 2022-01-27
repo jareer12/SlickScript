@@ -1,3 +1,6 @@
+function isNull(value) {
+  return value === null;
+}
 const crypt = (salt, text) => {
   const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
   const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
@@ -109,6 +112,35 @@ String.prototype.Decrypt = function (salt) {
 
 Array.prototype.toUnique = function () {
   return toUnique(this);
+};
+
+Array.prototype.remove = function (toremove) {
+  console.log(this);
+  data = [];
+  this.forEach((element) => {
+    if (element != toremove) {
+      data.push(element);
+    }
+  });
+  return data;
+};
+
+Number.prototype.Format = function () {
+  return new Intl.NumberFormat().format(this);
+};
+
+String.prototype.encodeEntities = function () {
+  return this.replace(/./gm, function (s) {
+    return (
+      s.match(/[a-z0-9\s]+/i) ? s : "&#" + s.charCodeAt(0) + ";"
+    ).toString();
+  });
+};
+
+String.prototype.decodeEntities = function () {
+  return (this + "").replace(/&#\d+;/gm, function (s) {
+    return String.fromCharCode(s.match(/\d+/gm)[0]);
+  });
 };
 
 randStr = randString;
