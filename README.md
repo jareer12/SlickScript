@@ -12,8 +12,13 @@
 
 ## Guide
 
+If a value is null nor not
+
+```
+isNull(string)
+```
+
 ```js
-console.log(isNull("f"));
 console.log((1).toBool());
 console.log(randNum(10, 100));
 console.log("#eb4034".toRGB());
