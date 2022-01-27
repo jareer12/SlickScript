@@ -3,7 +3,11 @@
 ## Quick Install
 
 ```yaml
-// Coming Soon
+// Cdnjs Coming Soon
+```
+
+```yaml
+// jsDelivr Coming Soon
 ```
 
 ## Guide
