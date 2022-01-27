@@ -1,0 +1,19 @@
+{
+  "name": "slickscript",
+  "version": "1.0.0",
+  "description": "SlickScript - Vanilla Javascript Made Easy.",
+  "main": "/src/slickscript.js",
+  "directories": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jareer12/SlickScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jareer12/SlickScript/issues"
+  },
+  "homepage": "https://github.com/jareer12/SlickScript#readme"
+}
