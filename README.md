@@ -34,7 +34,7 @@ randNum(10, 100);
 Convert hex to rgb code.
 
 ```js
-"#eb4034".toRGB();
+String.toRGB();
 ```
 
 Format an integer with commas as `number_format()` in php.
@@ -52,7 +52,7 @@ randString(10, true); // string length, use int or not
 Convert rgb to hex.
 
 ```js
-"235, 64, 52".toHex();
+String.toHex();
 ```
 
 Encrypt a string with the provided salt.
@@ -77,17 +77,16 @@ Remove a certain value from an array.
 
 ```js
 Array.remove("James");
-["Bob", "James", "Bob"].remove("James");
 ```
 
 Encode html entities.
 
 ```js
-console.log(`<!DOCTYPE html>`.encodeEntities());
+String.encodeEntities();
 ```
 
 Decode html entities.
 
 ```js
-console.log(`<!DOCTYPE html>`.decodeEntities());
+String.decodeEntities();
 ```
