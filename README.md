@@ -1,5 +1,13 @@
 ![./src/imgs/plain.png](./src/imgs/plain.png)
 
+## Quick Install
+
+```yaml
+// Coming Soon
+```
+
+## Guide
+
 ```js
 console.log(isNull("f"));
 console.log((1).toBool());
