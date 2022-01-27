@@ -12,7 +12,7 @@
 
 ## Guide
 
-If a value is null nor not
+If a value is null or not
 
 ```js
 isNull(string);
@@ -24,9 +24,19 @@ Convert string/integer to boolean, for integer, 0 will return false 1 wil return
 (1).toBool();
 ```
 
+Generate a random number.
+
 ```js
-console.log(randNum(10, 100));
-console.log("#eb4034".toRGB());
+randNum(10, 100);
+```
+
+Convert hex to rgb code.
+
+```js
+"#eb4034".toRGB();
+```
+
+```js
 console.log(randString(10, true));
 console.log("235, 64, 52".toHex());
 console.log((99999999).Format());
