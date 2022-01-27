@@ -22,6 +22,7 @@ Convert string/integer to boolean, for integer, 0 will return false 1 wil return
 
 ```js
 (1).toBool();
+"true".toBool();
 ```
 
 Generate a random number.
@@ -39,13 +40,13 @@ Convert hex to rgb code.
 Format an integer with commas as `number_format()` in php.
 
 ```js
-(99999999).Format();
+(99999999).Format(); // 99,999,999
 ```
 
 Generate a random string, can be used to make random ids.
 
 ```js
-randString(10, true); // string legth, use int or not
+randString(10, true); // string length, use int or not
 ```
 
 Convert rgb to hex.
@@ -60,7 +61,7 @@ Encrypt a string with the provided salt.
 String.Encrypt("StrongSalt");
 ```
 
-Encrypt a string with the provided salt.
+Decrypt a string with the provided salt.
 
 ```js
 String.Decrypt("StrongSalt");
@@ -79,7 +80,14 @@ Array.remove("James");
 ["Bob", "James", "Bob"].remove("James");
 ```
 
+Encode html entities.
+
 ```js
-console.log();
 console.log(`<!DOCTYPE html>`.encodeEntities());
+```
+
+Decode html entities.
+
+```js
+console.log(`<!DOCTYPE html>`.decodeEntities());
 ```
