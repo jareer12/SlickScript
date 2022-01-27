@@ -21,7 +21,7 @@ isNull(string);
 Convert string/integer to boolean, for integer, 0 will return false 1 wil return true.
 
 ```js
-console.log((1).toBool());
+(1).toBool();
 ```
 
 ```js
