@@ -14,12 +14,17 @@
 
 If a value is null nor not
 
+```js
+isNull(string);
 ```
-isNull(string)
-```
+
+Convert string/integer to boolean, for integer, 0 will return false 1 wil return true.
 
 ```js
 console.log((1).toBool());
+```
+
+```js
 console.log(randNum(10, 100));
 console.log("#eb4034".toRGB());
 console.log(randString(10, true));
