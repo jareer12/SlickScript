@@ -36,13 +36,50 @@ Convert hex to rgb code.
 "#eb4034".toRGB();
 ```
 
+Format an integer with commas as `number_format()` in php.
+
 ```js
-console.log(randString(10, true));
-console.log("235, 64, 52".toHex());
-console.log((99999999).Format());
-console.log("Jareer".Encrypt("StrongSalt"));
-console.log("53786b7c7c6b".Decrypt("StrongSalt"));
-console.log(["Bob", "James", "Bob"].toUnique());
-console.log(["Bob", "James", "Bob"].remove("James"));
+(99999999).Format();
+```
+
+Generate a random string, can be used to make random ids.
+
+```js
+randString(10, true); // string legth, use int or not
+```
+
+Convert rgb to hex.
+
+```js
+"235, 64, 52".toHex();
+```
+
+Encrypt a string with the provided salt.
+
+```js
+String.Encrypt("StrongSalt");
+```
+
+Encrypt a string with the provided salt.
+
+```js
+String.Decrypt("StrongSalt");
+```
+
+Get unique value(s) from array.
+
+```js
+Array.toUnique();
+```
+
+Remove a certain value from an array.
+
+```js
+Array.remove("James");
+["Bob", "James", "Bob"].remove("James");
+```
+
+```js
+console.log();
 console.log(`<!DOCTYPE html>`.encodeEntities());
 ```
