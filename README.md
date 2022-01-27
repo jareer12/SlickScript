@@ -1,8 +1,4 @@
-# SlickScript
-
-![./src/imgs/slick.png](./src/imgs/slick.png)
-
-SlickScript - Vanilla Javascript Made Easy.
+![./src/imgs/plain.png](./src/imgs/plain.png)
 
 ```js
 console.log(isNull("f"));
