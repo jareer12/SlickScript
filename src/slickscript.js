@@ -1,6 +1,15 @@
 function isNull(value) {
   return value === null;
 }
+function countElementsByClassName(val) {
+  return document.getElementsByClassName(val).length;
+}
+function minify_html(text) {
+  return text
+    .replace(/\<\!--\s*?[^\s?\[][\s\S]*?--\>/g, "")
+    .replace(/\>\s*\</g, "><");
+}
+
 const crypt = (salt, text) => {
   const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
   const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
@@ -141,6 +150,14 @@ String.prototype.decodeEntities = function () {
   return (this + "").replace(/&#\d+;/gm, function (s) {
     return String.fromCharCode(s.match(/\d+/gm)[0]);
   });
+};
+
+String.prototype.minify = function () {
+  return minify_html(this);
+};
+
+String.prototype.countElementsByClassName = function () {
+  return document.getElementsByClassName(this).length;
 };
 
 randStr = randString;
