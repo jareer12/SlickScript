@@ -18,11 +18,11 @@ If a value is null or not
 isNull(string);
 ```
 
-Convert string/integer to boolean, for integer, 0 will return false 1 wil return true.
+Convert string/number to boolean, for integer, 0 will return false 1 wil return true.
 
 ```js
-(1).toBool();
-"true".toBool();
+Number.toBool();
+String.toBool();
 ```
 
 Generate a random number.
@@ -40,7 +40,7 @@ Convert hex to rgb code.
 Format an integer with commas as `number_format()` in php.
 
 ```js
-(99999999).Format(); // 99,999,999
+Number.Format();
 ```
 
 Generate a random string, can be used to make random ids.
