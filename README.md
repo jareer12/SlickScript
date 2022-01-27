@@ -1,5 +1,7 @@
 # SlickScript
 
+![./src/imgs/slick.png](./src/imgs/slick.png)
+
 SlickScript - Vanilla Javascript Made Easy.
 
 ```js
