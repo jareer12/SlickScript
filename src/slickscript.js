@@ -183,6 +183,15 @@ String.prototype.isEmail = function () {
   }
 };
 
+HTMLCollection.prototype.innerHTML = function (value) {
+  for (let i = 0; i < this.length; i++) {
+    let element = this[i];
+    if (element.innerHTML) {
+      element.innerHTML = value;
+    }
+  }
+};
+
 console.color = function (val, color) {
   if (!color.startsWith("#")) {
     color = `#${color}`;
