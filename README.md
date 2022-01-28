@@ -46,21 +46,21 @@ Convert hex to rgb code.
 
 ```js
 String.toRGB();
-"#4269f5".toHex(); // ===> rgb(66, 105, 245)
+"#4269f5".toHex(); // ===> "rgb(66, 105, 245)"
 ```
 
 Format an integer with commas as `number_format()` in php.
 
 ```js
 Number.Format();
-(99999999).Format(); // ===> 99,999,999
+(99999999).Format(); // ===> "99,999,999"
 ```
 
 Convert rgb to hex.
 
 ```js
 String.toHex();
-"(66, 105, 245)".toHex(); // ===> #4269f5
+"(66, 105, 245)".toHex(); // ===> "#4269f5"
 ```
 
 Encrypt a string with the provided salt.
