@@ -156,8 +156,8 @@ String.prototype.minify = function () {
   return minify_html(this);
 };
 
-Document.prototype.countElementsByClassName = function () {
-  return document.getElementsByClassName(this).length;
+HTMLCollection.prototype.count = function () {
+  return this.length;
 };
 
 Array.prototype.highest = function () {
@@ -166,6 +166,10 @@ Array.prototype.highest = function () {
 
 Array.prototype.lowest = function () {
   return Math.min(...this);
+};
+
+Array.prototype.random = function () {
+  return this[Math.floor(Math.random() * this.length)];
 };
 
 String.prototype.isEmail = function () {
