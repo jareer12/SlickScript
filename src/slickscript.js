@@ -184,7 +184,7 @@ String.prototype.isEmail = function () {
 };
 
 HTMLCollection.prototype.innerHTML = function (value) {
-  for (let i = 0; i < this.length; i++) {
+  for (i = 0; i < this.length; i++) {
     let element = this[i];
     if (element.innerHTML) {
       element.innerHTML = value;
