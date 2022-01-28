@@ -19,7 +19,8 @@
 If a value is null or not
 
 ```js
-isNull(string);
+let string = null;
+isNull(string); // ===> true
 ```
 
 Generate a random number.
@@ -52,6 +53,7 @@ Format an integer with commas as `number_format()` in php.
 
 ```js
 Number.Format();
+(99999999).Format(); // ===> 99,999,999
 ```
 
 Convert rgb to hex.
@@ -65,18 +67,21 @@ Encrypt a string with the provided salt.
 
 ```js
 String.Encrypt("StrongSalt");
+"Password".Encrypt("StrongSalt"); // ====> "49786a6a6e766b7d"
 ```
 
 Decrypt a string with the provided salt.
 
 ```js
 String.Decrypt("StrongSalt");
+"49786a6a6e766b7d".Decrypt("StrongSalt"); // ====> "Password"
 ```
 
 Get unique value(s) from array.
 
 ```js
 Array.toUnique();
+["Bob", "Alice", "James", "James"].remove("James"); // ===> ["Bob", "Alice", "James"]
 ```
 
 Remove a certain value from an array.
@@ -131,4 +136,11 @@ Gets the number of elements with the provided class.
 ```js
 String.count();
 document.getElementsByClassName("flex").count(); // ===> 3
+```
+
+Log colored text to the console.
+
+```js
+console.color(value, color);
+console.color("Wow My Text Is Colored", "#d1463f");
 ```

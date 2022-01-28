@@ -124,7 +124,6 @@ Array.prototype.toUnique = function () {
 };
 
 Array.prototype.remove = function (toremove) {
-  console.log(this);
   data = [];
   this.forEach((element) => {
     if (element != toremove) {
@@ -135,6 +134,10 @@ Array.prototype.remove = function (toremove) {
 };
 
 Number.prototype.Format = function () {
+  return new Intl.NumberFormat().format(this);
+};
+
+Number.prototype.format = function () {
   return new Intl.NumberFormat().format(this);
 };
 
@@ -178,6 +181,13 @@ String.prototype.isEmail = function () {
   } else {
     return false;
   }
+};
+
+console.color = function (val, color) {
+  if (!color.startsWith("#")) {
+    color = `#${color}`;
+  }
+  console.log(`%c${val}`, `color:${color};`);
 };
 
 randStr = randString;
