@@ -2,12 +2,10 @@
 
 ## Quick Install
 
-```yaml
-// Cdnjs Coming Soon
-```
+JSDelivr
 
-```yaml
-// jsDelivr Coming Soon
+````yaml
+https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.min.js
 ```
 
 ## Guide
@@ -16,7 +14,7 @@ If a value is null or not
 
 ```js
 isNull(string);
-```
+````
 
 Generate a random number.
 
