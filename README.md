@@ -4,7 +4,7 @@
 
 JSDelivr
 
-````yaml
+```yaml
 https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.min.js
 ```
 
@@ -14,7 +14,7 @@ If a value is null or not
 
 ```js
 isNull(string);
-````
+```
 
 Generate a random number.
 
