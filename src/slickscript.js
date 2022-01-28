@@ -49,18 +49,6 @@ function rgbToHex(rgb) {
   );
 }
 
-function hexToRGB(hex, alpha) {
-  r = parseInt(hex.slice(1, 3), 16);
-  g = parseInt(hex.slice(3, 5), 16);
-  b = parseInt(hex.slice(5, 7), 16);
-
-  if (alpha) {
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-  } else {
-    return `rgb(${r}, ${g}, ${b})`;
-  }
-}
-
 function toUnique(array) {
   return [...new Set(array)];
 }
@@ -107,8 +95,20 @@ String.prototype.toHex = function () {
   return rgbToHex(this);
 };
 
-String.prototype.toRGB = function () {
-  return hexToRGB(this);
+String.prototype.toRGB = function (alpha) {
+  r = parseInt(this.slice(1, 3), 16);
+  g = parseInt(this.slice(3, 5), 16);
+  b = parseInt(this.slice(5, 7), 16);
+
+  if (alpha) {
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  } else {
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+};
+
+String.prototype.Encrypt = function (salt) {
+  return crypt(salt, this);
 };
 
 String.prototype.Encrypt = function (salt) {
@@ -156,8 +156,24 @@ String.prototype.minify = function () {
   return minify_html(this);
 };
 
-String.prototype.countElementsByClassName = function () {
+Document.prototype.countElementsByClassName = function () {
   return document.getElementsByClassName(this).length;
+};
+
+Array.prototype.highest = function () {
+  return Math.max(...this);
+};
+
+Array.prototype.lowest = function () {
+  return Math.min(...this);
+};
+
+String.prototype.isEmail = function () {
+  if (this.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 randStr = randString;

@@ -90,3 +90,27 @@ Decode html entities.
 ```js
 String.decodeEntities();
 ```
+
+Get the highest integer value from an array
+
+```js
+Array.highest();
+```
+
+Get the lowest integer value from an array
+
+```js
+Array.lowest();
+```
+
+Checks whether string is email or not.
+
+```js
+String.isEmail();
+```
+
+Gets the number of elements with the same class.
+
+```js
+String.countElementsByClassName();
+```

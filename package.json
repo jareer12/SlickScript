@@ -1,6 +1,6 @@
 {
   "name": "slickscript",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "SlickScript - Vanilla Javascript Made Easy.",
   "main": "/src/slickscript.js",
   "directories": {},
