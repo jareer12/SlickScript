@@ -2,10 +2,16 @@
 
 ## Quick Install
 
-JSDelivr
+### Production
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.min.js"></script>
+```
+
+### Development
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.js"></script>
 ```
 
 ## Guide
