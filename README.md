@@ -4,8 +4,8 @@
 
 JSDelivr
 
-```yaml
-https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.min.js
+```html
+<script src="https://cdn.jsdelivr.net/npm/slickscript@latest/src/slickscript.min.js"></script>
 ```
 
 ## Guide
