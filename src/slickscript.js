@@ -199,5 +199,14 @@ console.color = function (val, color) {
   console.log(`%c${val}`, `color:${color};`);
 };
 
+Array.prototype.merge = function (array) {
+  let ray = this;
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    ray.push(element);
+  }
+  return ray;
+};
+
 randStr = randString;
 randNum = randNumber;

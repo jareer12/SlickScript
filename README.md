@@ -138,6 +138,12 @@ String.count();
 document.getElementsByClassName("flex").count(); // ===> 3
 ```
 
+Merge two arrays together.
+
+```js
+[1, 2, 3].merge([4, 5, 6]);
+```
+
 Log colored text to the console.
 
 ```js

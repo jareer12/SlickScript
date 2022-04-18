@@ -1,9 +1,5 @@
-(1).toString(); // "1"
-parseFloat("123"); // 123
-
-String(1); // "1"
-Number("123"); // 123
-
-function rgb(r, g, b) {
-  return `rgb(${r}, ${g}, ${b},)`;
-}
+fs = require("fs"); // npm install fs
+Yaml = require("js-yaml"); // npm install js-yaml
+Data = Yaml.load(fs.readFileSync(`./path/to/file`, { encoding: "utf-8" }));
+console.log(Data);
+// {}
